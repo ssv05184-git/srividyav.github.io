@@ -170,7 +170,7 @@
 
       <div class="w-44 h-44 rounded-full overflow-hidden border-2 border-white/40 shadow-lg">
   <img
-  src="pp.jpg"
+  src="PP.jpg"
   alt="Srividya V"
   width="400"
   height="400"
@@ -471,26 +471,22 @@
   Academic Projects
 </h3>
 
-<div class="grid md:grid-cols-2 gap-8 mb-16">
+<div class="grid md:grid-cols-3 gap-8 mb-16">
 
-  <!-- Project 1: Secure Private Cloud -->
+  <!-- Project 1 -->
   <div class="bg-white rounded-xl border p-6">
-    <h4 class="text-lg font-semibold text-slate-800 mb-2">
-      Implementation of a Secure Private Cloud
+    <h4 class="font-semibold text-lg text-slate-800 mb-1">
+      Secure Private Cloud Implementation
     </h4>
 
-    <p class="text-sm text-indigo-600 mb-1">
-      B.E Final Year Project • May 2017
-    </p>
-
-    <p class="text-sm text-slate-600 mb-3">
-      Institute: <strong>ISTRAC, Bangalore</strong>
+    <p class="text-sm text-indigo-600 mb-2">
+      ISTRAC, Bangalore • May 2017
     </p>
 
     <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
       <li>Designed a secure private cloud using virtual machines and OwnCloud</li>
-      <li>Enabled controlled file sharing within a private community and selective public access</li>
-      <li>Focused on access control, data security, and system scalability</li>
+      <li>Enabled controlled file sharing with private & selective public access</li>
+      <li>Focused on access control, data security, and scalability</li>
     </ul>
 
     <div class="flex flex-wrap gap-2 mt-4">
@@ -500,61 +496,54 @@
     </div>
   </div>
 
-  <!-- Project 2: Enhanced CURE Algorithm -->
+  <!-- Project 2 -->
   <div class="bg-white rounded-xl border p-6">
-    <h4 class="text-lg font-semibold text-slate-800 mb-2">
+    <h4 class="font-semibold text-lg text-slate-800 mb-1">
       Enhanced CURE Algorithm using K-d Tree
     </h4>
 
-    <p class="text-sm text-indigo-600 mb-1">
-      April 2019
-    </p>
-
-    <p class="text-sm text-slate-600 mb-3">
-      Institute: <strong>VIT, Vellore</strong>
+    <p class="text-sm text-indigo-600 mb-2">
+      VIT, Vellore • April 2019
     </p>
 
     <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-      <li>Implemented the CURE clustering algorithm optimized using K-d Tree data structure</li>
-      <li>Improved clustering efficiency for massive datasets with reduced time complexity</li>
-      <li>Focused on scalability and performance optimization</li>
+      <li>Implemented CURE clustering optimized using K-d Tree</li>
+      <li>Reduced time complexity for clustering massive datasets</li>
+      <li>Improved scalability and clustering performance</li>
     </ul>
 
     <div class="flex flex-wrap gap-2 mt-4">
       <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Clustering</span>
-      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">CURE Algorithm</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">CURE</span>
       <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">K-d Tree</span>
     </div>
   </div>
 
-  <!-- Project 3: Basketball Win Prediction -->
+  <!-- Project 3 -->
   <div class="bg-white rounded-xl border p-6">
-    <h4 class="text-lg font-semibold text-slate-800 mb-2">
-      Predicting Basketball Team Winning Rate using Machine Learning
+    <h4 class="font-semibold text-lg text-slate-800 mb-1">
+      Basketball Team Winning Rate Prediction
     </h4>
 
-    <p class="text-sm text-indigo-600 mb-1">
-      April 2019
-    </p>
-
-    <p class="text-sm text-slate-600 mb-3">
-      Institute: <strong>VIT, Vellore</strong>
+    <p class="text-sm text-indigo-600 mb-2">
+      VIT, Vellore • April 2019
     </p>
 
     <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-      <li>Performed comparative analysis of multiple machine learning algorithms on basketball datasets</li>
-      <li>Identified the best-performing model to predict team winning rates</li>
-      <li>Visualized insights and results using Tableau dashboards</li>
+      <li>Compared multiple ML models on basketball datasets</li>
+      <li>Selected best-performing algorithm for win prediction</li>
+      <li>Visualized results using Tableau dashboards</li>
     </ul>
 
     <div class="flex flex-wrap gap-2 mt-4">
       <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Machine Learning</span>
-      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Prediction Models</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Prediction</span>
       <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Tableau</span>
     </div>
   </div>
 
 </div>
+
 
     <!-- ================= INDUSTRY PROJECTS ================= -->
     <h3 class="text-xl font-semibold text-slate-800 mb-6">
@@ -718,6 +707,18 @@
         <div class="flex gap-4 mt-4 text-sm">
           <a href="https://link.springer.com/chapter/10.1007/978-981-16-0171-2_25" target="_blank" class="text-sky-600 hover:underline">Springer Link</a>
           <a href="https://doi.org/10.1007/978-981-16-0171-2_25" target="_blank" class="text-sky-600 hover:underline">DOI</a>
+          <button onclick="toggleBib('bib3')" class="text-sky-600 hover:underline"> Cite (BibTeX)</button>
+        <pre id="bib3" class="hidden mt-4 text-xs bg-slate-50 border rounded p-4 overflow-x-auto text-slate-700">
+@InProceedings{TagIT2021,
+  author    = {Srividya, V. and Dudani, Anmol and Sneha, B. and Tripathy, B. K.},
+  title     = {TagIT: A System for Image Auto-tagging and Clustering},
+  booktitle = {Data Engineering and Intelligent Computing},
+  year      = {2021},
+  publisher = {Springer Singapore},
+  doi       = {10.1007/978-981-16-0171-2_25}
+}
+</pre>
+  
         </div>
       </div>
 
@@ -737,6 +738,18 @@
         <div class="flex gap-4 mt-4 text-sm">
           <a href="https://link.springer.com/chapter/10.1007/978-981-19-0240-6_3" target="_blank" class="text-sky-600 hover:underline">Springer Link</a>
           <a href="https://doi.org/10.1007/978-981-19-0240-6_3" target="_blank" class="text-sky-600 hover:underline">DOI</a>
+          <button onclick="toggleBib('bib4')" class="text-sky-600 hover:underline">  Cite (BibTeX)</button>
+          <pre id="bib4" class="hidden mt-4 text-xs bg-slate-50 border rounded p-4 overflow-x-auto text-slate-700">
+@InCollection{BigDataSCM2022,
+  author    = {Srividya, V. and Tripathy, B. K.},
+  title     = {Role of Big Data in Supply Chain Management},
+  booktitle = {Big Data Analytics in Industry},
+  year      = {2022},
+  publisher = {Springer},
+  doi       = {10.1007/978-981-19-0240-6_3}
+}
+</pre>
+
         </div>
       </div>
 
@@ -756,6 +769,19 @@
         <div class="flex gap-4 mt-4 text-sm">
           <a href="https://link.springer.com/chapter/10.1007/978-981-15-4936-6_20" target="_blank" class="text-sky-600 hover:underline">Springer Link</a>
           <a href="https://doi.org/10.1007/978-981-15-4936-6_20" target="_blank" class="text-sky-600 hover:underline">DOI</a>
+          <button onclick="toggleBib('bib5')" class="text-sky-600 hover:underline">Cite (BibTeX)</button>
+          <pre id="bib5" class="hidden mt-4 text-xs bg-slate-50 border rounded p-4 overflow-x-auto text-slate-700">
+@InProceedings{CrimeConsensus2021,
+  author    = {Lavanya, K. and Srividya, V. and Sneha, B. and Dudani, Anmol},
+  title     = {Iterative Parameterized Consensus Approach for Clustering and Visualization of Crime Analysis},
+  booktitle = {Information Management and Machine Intelligence},
+  year      = {2021},
+  publisher = {Springer Singapore},
+  pages     = {183--197},
+  doi       = {10.1007/978-981-15-4936-6_20}
+}
+</pre>
+
         </div>
       </div>
 
@@ -774,6 +800,19 @@
         <div class="flex gap-4 mt-4 text-sm">
           <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003138082-9/role-blockchain-music-industry-srividya-tripathy" target="_blank" class="text-sky-600 hover:underline">Publisher Link</a>
           <a href="https://doi.org/10.1201/9781003138082" target="_blank" class="text-sky-600 hover:underline">DOI</a>
+          <button onclick="toggleBib('bib6')" class="text-sky-600 hover:underline">Cite (BibTeX)</button>
+          <pre id="bib6" class="hidden mt-4 text-xs bg-slate-50 border rounded p-4 overflow-x-auto text-slate-700">
+@InCollection{BlockchainMusic2022,
+  author    = {Srividya, V.},
+  title     = {Role of Blockchain in the Music Industry},
+  booktitle = {Blockchain Technology: Exploring Opportunities, Challenges, and Applications},
+  editor    = {Vyas, S. and Shukla, V. K. and Gupta, S. and Prasad, A.},
+  publisher = {CRC Press},
+  year      = {2022},
+  doi       = {10.1201/9781003138082}
+}
+</pre>
+
         </div>
       </div>
 
@@ -805,12 +844,22 @@
       <ul class="list-disc list-inside space-y-3 text-slate-700">
 
         <li>
-          <strong>VTU Rank Holder – VI Semester</strong>, Bachelor of Engineering
+          <strong>VTU 1st Rank Holder – VI Semester</strong>, Bachelor of Engineering
         </li>
 
         <li>
           <strong>Distinction Award</strong> for securing First Class with Distinction
           in all eight semesters of Bachelor of Engineering
+        </li>
+
+        <li>
+          <strong>Best Project Award</strong> for the final year B.E project 
+          <em>“Implementation of a Secure Private Cloud”</em>
+        </li>
+
+        <li>
+          <strong>Best Presentation Award</strong> for the final year B.E project 
+          <em>“Implementation of a Secure Private Cloud”</em>
         </li>
 
         <li>
@@ -981,27 +1030,6 @@
               Bangalore, conducted by IEEE  
               <span class="block text-sm text-slate-500">August 2016</span>
             </li>
-
-          </ul>
-        </div>
-      </div>
-
-      <!-- ================= CERTIFICATIONS ================= -->
-      <div>
-        <h3 class="text-xl font-semibold text-slate-800 mb-6 flex items-center gap-2">
-          <i data-feather="check-circle" class="text-sky-600"></i>
-          Certifications
-        </h3>
-
-        <div class="bg-white rounded-lg border p-6">
-          <ul class="space-y-4 text-slate-700">
-
-            <li>
-              <strong>Cambridge English Level 1 Certificate</strong>  
-              ESOL International (Business English)  
-              <span class="block text-sm text-slate-500">February 2014</span>
-            </li>
-
             <li>
               <strong>Certificate of Completion</strong> – Workshop on  
               <em>ChatGPT, DeepSeek, and Other AI Tools for Productivity</em>  
@@ -1012,9 +1040,79 @@
               </span>
             </li>
 
+
           </ul>
         </div>
       </div>
+
+      <!-- ================= CERTIFICATIONS ================= -->
+<div>
+  <h3 class="text-xl font-semibold text-slate-800 mb-6 flex items-center gap-2">
+    <i data-feather="check-circle" class="text-sky-600"></i>
+    Certifications
+  </h3>
+
+  <div class="bg-white rounded-lg border p-6 space-y-6">
+
+    <!-- Formal Certifications -->
+    <div>
+      <h4 class="font-semibold text-slate-700 mb-3">
+        Formal Certifications
+      </h4>
+
+      <ul class="space-y-4 text-slate-700 text-sm">
+        <li>
+          <strong>Cambridge English Level 1 Certificate</strong>  
+          ESOL International (Business English)  
+          <span class="block text-xs text-slate-500">February 2014</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- LinkedIn Learning -->
+    <div>
+      <h4 class="font-semibold text-slate-700 mb-3">
+        LinkedIn Learning – Professional Courses
+      </h4>
+
+      <ul class="space-y-4 text-slate-700 text-sm">
+
+        <li>
+          <strong>Power Apps: Building Data-Driven Apps</strong>  
+          <span class="block text-xs text-slate-500">Issued March 2021</span>
+        </li>
+
+        <li>
+          <strong>Mistakes to Avoid in Machine Learning</strong>  
+          <span class="block text-xs text-slate-500">Issued January 2021</span>
+        </li>
+
+        <li>
+          <strong>Python GUI Development with Tkinter</strong>  
+          <span class="block text-xs text-slate-500">Issued October 2020</span>
+        </li>
+
+        <li>
+          <strong>Using Python for Automation</strong>  
+          <span class="block text-xs text-slate-500">Issued August 2020</span>
+        </li>
+
+        <li>
+          <strong>Learning Python</strong>  
+          <span class="block text-xs text-slate-500">Issued July 2020</span>
+        </li>
+
+        <li>
+          <strong>Neural Networks and Convolutional Neural Networks – Essential Training</strong>  
+          <span class="block text-xs text-slate-500">Issued July 2020</span>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+
 
     </div>
   </div>
@@ -1099,4 +1197,3 @@
 
 </body>
 </html>
-
