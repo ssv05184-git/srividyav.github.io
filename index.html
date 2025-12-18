@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ================= SEO ================= -->
+<title>Srividya V | AI Automation Engineer & Researcher</title>
+
+<meta name="description" content="Srividya V is a Software Development Application Engineer at Intel, specializing in AI-driven automation, machine learning, and large language models. Author of multiple peer-reviewed publications." />
+
+<meta name="author" content="Srividya V" />
+
+<!-- ================= OPEN GRAPH (LinkedIn Preview) ================= -->
+<meta property="og:title" content="Srividya V | AI Automation Engineer & Researcher" />
+<meta property="og:description" content="AI Automation Engineer at Intel with expertise in Python, Machine Learning, LLMs, and peer-reviewed research publications." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ssv05184-git.github.io/srividyav.github.io/" />
+<meta property="og:image" content="https://ssv05184-git.github.io/srividyav.github.io/PP.jpg" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Srividya V | Digital Resume</title>
-
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
@@ -25,59 +37,96 @@
 </style>
 
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      document.querySelectorAll("#mobile-menu a").forEach(link => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+    }
+  });
+</script>
+
 
 <body class="bg-gradient-to-br from-sky-50 via-indigo-50 to-slate-100 text-slate-800">
 <!-- ================= HEADER NAVIGATION ================= -->
+<!-- ================= HEADER NAVIGATION ================= -->
 <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-slate-200">
-  <div class="max-w-6xl mx-auto px-6 py-4 flex flex-wrap items-center justify-between">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-    <!-- Logo / Name -->
-    <div class="font-semibold text-indigo-700 text-lg">
-      <img
-    src="logo.png"
-    alt="Srividya V Logo"
-    class="h-8 w-auto"
-  />
-    </div>
+    <!-- Logo -->
+    <a href="#about" class="flex items-center">
+      <img src="logo.png" alt="Srividya V Logo" class="h-8 w-auto" />
+    </a>
 
-    <!-- Navigation -->
-    <nav class="flex flex-wrap gap-5 text-sm text-slate-700">
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex gap-5 text-sm text-slate-700">
 
       <a href="#about" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="user"></i> About
       </a>
-
       <a href="#education" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="book"></i> Education
       </a>
-
       <a href="#experience" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="briefcase"></i> Experience
       </a>
-
       <a href="#skills" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="code"></i> Skills
       </a>
-
       <a href="#projects" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="folder"></i> Projects
       </a>
-
       <a href="#publications" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="file-text"></i> Publications
       </a>
-
       <a href="#awards" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="award"></i> Awards
       </a>
-
       <a href="#workshops" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="book-open"></i> Workshops
       </a>
-
       <a href="#contact" class="flex items-center gap-1 hover:text-indigo-600">
         <i data-feather="mail"></i> Contact
       </a>
+
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button
+      id="menu-btn"
+      class="md:hidden text-slate-700 focus:outline-none"
+      aria-label="Toggle Menu"
+    >
+      <i data-feather="menu"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-white border-t border-slate-200"
+  >
+    <nav class="px-6 py-4 space-y-3 text-sm text-slate-700">
+
+      <a href="#about" class="block hover:text-indigo-600">About</a>
+      <a href="#education" class="block hover:text-indigo-600">Education</a>
+      <a href="#experience" class="block hover:text-indigo-600">Experience</a>
+      <a href="#skills" class="block hover:text-indigo-600">Skills</a>
+      <a href="#projects" class="block hover:text-indigo-600">Projects</a>
+      <a href="#publications" class="block hover:text-indigo-600">Publications</a>
+      <a href="#awards" class="block hover:text-indigo-600">Awards</a>
+      <a href="#workshops" class="block hover:text-indigo-600">Workshops</a>
+      <a href="#contact" class="block hover:text-indigo-600">Contact</a>
 
     </nav>
   </div>
@@ -89,33 +138,31 @@
 
     <div>
   <span class="text-sm uppercase tracking-wide text-cyan-100">
-    Digital Portfolio
-  </span>
+  Digital Portfolio
+</span>
 
-  <h1 class="text-4xl font-semibold mt-2">
-    Hi, I’m Srividya V 👋
-  </h1>
+<h1 class="text-4xl font-semibold mt-2">
+  Hi, I’m Srividya V 👋
+</h1>
 
-  <p class="mt-4 text-indigo-100 max-w-2xl leading-relaxed">
-    I am a Software Development Application Engineer at Intel Technology India,
-    with a strong foundation in Data Analytics and a passion for building
-    intelligent, scalable solutions. My work spans Python automation, low-code
-    platforms, machine learning, and large language model–based systems that
-    improve efficiency, decision-making, and user experience.
-  </p>
+<p class="mt-4 text-indigo-100 max-w-2xl leading-relaxed">
+  Software Development Application Engineer at Intel, specializing in
+  AI-driven automation, Python-based systems, machine learning, and
+  large language model solutions that simplify complex workflows and
+  deliver real business impact.
+</p>
 
-  <p class="mt-3 text-indigo-100 max-w-2xl leading-relaxed">
-    I hold a Master’s degree in Data Analytics from Vellore Institute of
-    Technology and have authored multiple peer-reviewed publications with
-    Springer and CRC Press. I enjoy blending research thinking with practical
-    engineering to solve real-world problems at scale.
-  </p>
+<p class="mt-3 text-indigo-100 max-w-2xl leading-relaxed">
+  With a Master’s degree in Data Analytics and multiple peer-reviewed
+  publications, I enjoy blending research thinking with practical
+  engineering to build scalable, intelligent systems.
+</p>
 
-  <p class="mt-3 text-indigo-100 max-w-2xl leading-relaxed">
-    This website is a curated snapshot of my professional journey — covering my
-    education, industry experience, research publications, projects, and
-    continuous learning.
-  </p>
+<p class="mt-3 text-indigo-100 max-w-2xl leading-relaxed">
+  This portfolio highlights my work across industry projects, research,
+  and continuous learning.
+</p>
+
 </div>
 
 
@@ -123,10 +170,15 @@
 
       <div class="w-44 h-44 rounded-full overflow-hidden border-2 border-white/40 shadow-lg">
   <img
-    src="PP.jpg"
-    alt="Srividya V"
-    class="w-full h-full object-cover"
-  />
+  src="PP.jpg"
+  alt="Srividya V"
+  width="400"
+  height="400"
+  loading="lazy"
+  decoding="async"
+  class="w-full h-full object-cover object-center"
+/>
+
 </div>
 
     </div>
@@ -141,6 +193,56 @@
   <span class="px-3 py-1 rounded-full bg-white/15">
     🤖 AI & Automation Engineer @ Intel
   </span>
+</div>
+<!-- ================= HERO STATS ================= -->
+<div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+
+  <div class="bg-white/10 rounded-lg px-4 py-3">
+    <div class="text-2xl font-semibold text-white">10+</div>
+    <div class="text-xs text-cyan-100">Enterprise Tools Built</div>
+  </div>
+
+  <div class="bg-white/10 rounded-lg px-4 py-3">
+    <div class="text-2xl font-semibold text-white">6</div>
+    <div class="text-xs text-cyan-100">Peer-Reviewed Publications</div>
+  </div>
+
+  <div class="bg-white/10 rounded-lg px-4 py-3">
+    <div class="text-2xl font-semibold text-white">5+</div>
+    <div class="text-xs text-cyan-100">Intel Recognition Awards</div>
+  </div>
+
+  <div class="bg-white/10 rounded-lg px-4 py-3">
+    <div class="text-2xl font-semibold text-white">8+</div>
+    <div class="text-xs text-cyan-100">Years of Academic & Industry Experience</div>
+  </div>
+
+</div>
+
+<!-- ================= HERO ACTIONS ================= -->
+<div class="mt-6 flex flex-wrap gap-4">
+
+  <!-- LinkedIn -->
+  <a
+    href="https://www.linkedin.com/in/srividya-v-a999a3b5"
+    target="_blank"
+    class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white text-indigo-700 font-medium hover:bg-indigo-50 transition"
+  >
+    <i data-feather="linkedin"></i>
+    LinkedIn
+  </a>
+
+  <!-- Resume -->
+  <a
+  href="Srividya_V_Resume.pdf"
+  download="Srividya_V_Resume.pdf"
+  class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-white/40 text-white hover:bg-white/10 transition"
+>
+  <i data-feather="download"></i>
+  Download Resume
+</a>
+
+
 </div>
 
   </div>
@@ -195,116 +297,6 @@
     </div>
   </div>
 </section>
-
-<!-- ================= TECHNICAL SKILLS ================= -->
-<section id="skills" class="max-w-6xl mx-auto px-6 py-20">
-  <h2 class="text-2xl font-semibold text-indigo-700 mb-8">Technical Skills</h2>
-
-  <div class="grid md:grid-cols-2 gap-6">
-
-    <!-- Programming -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="code"></i> Programming
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span><i class="devicon-cplusplus-plain colored"></i> C++</span>
-        <span><i class="devicon-r-original colored"></i> R</span>
-        <span><i class="devicon-java-plain colored"></i> Java (Basics)</span>
-        <span><i class="devicon-python-plain colored"></i> Python</span>
-        <span><i class="devicon-javascript-plain colored"></i> JavaScript</span>
-        <span><i class="devicon-html5-plain colored"></i> HTML</span>
-        <span><i class="devicon-css3-plain colored"></i> CSS</span>
-      </p>
-    </div>
-
-    <!-- Databases -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="database"></i> Databases
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span>🟢 Neo4j</span>
-        <span><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
-        <span><i class="devicon-mongodb-plain colored"></i> MongoDB</span>
-        <span>🟣 Cassandra</span>
-      </p>
-    </div>
-
-    <!-- Methodologies -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="activity"></i> Methodologies
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span>Agile (Scrum)</span>
-        <span>DevOps</span>
-        <span>Waterfall</span>
-      </p>
-    </div>
-
-    <!-- Tools -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="tool"></i> Tools
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span>⚡ PowerApps</span>
-        <span>🔁 Power Automate</span>
-        <span>📁 SharePoint</span>
-        <span>🌐 OpenWebUI</span>
-      </p>
-    </div>
-
-    <!-- Frameworks -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="layers"></i> Frameworks
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span>🧡 Svelte</span>
-        <span><i class="devicon-flask-original"></i> Flask</span>
-        <span>⚡ FastAPI</span>
-        <span>📊 Streamlit</span>
-        <span>🖥 Tkinter</span>
-      </p>
-    </div>
-
-    <!-- Libraries -->
-    <div class="bg-white rounded-lg border p-5">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="package"></i> Libraries
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span><i class="devicon-tensorflow-original colored"></i> TensorFlow</span>
-        <span><i class="devicon-numpy-original colored"></i> NumPy</span>
-        <span><i class="devicon-pandas-original colored"></i> Pandas</span>
-        <span>🧠 Keras</span>
-        <span>📈 Scikit-learn</span>
-        <span>🗣 NLTK</span>
-        <span>🤖 OpenAI</span>
-        <span>🔌 LiteLLM</span>
-        <span>🧩 LangGraph</span>
-        <span>📦 Pydantic</span>
-      </p>
-    </div>
-
-    <!-- Domains -->
-    <div class="bg-white rounded-lg border p-5 md:col-span-2">
-      <h3 class="font-medium mb-3 flex items-center gap-2">
-        <i data-feather="target"></i> Domains
-      </h3>
-      <p class="text-slate-600 flex flex-wrap gap-3">
-        <span>Machine Learning</span>
-        <span>Data Analysis</span>
-        <span>Natural Language Processing</span>
-        <span>Large Language Models</span>
-      </p>
-    </div>
-
-  </div>
-</section>
-
 <!-- ================= EXPERIENCE ================= -->
 <section id="experience" class="max-w-6xl mx-auto px-6 py-20">
   <h2 class="text-2xl font-semibold text-indigo-700 mb-10">Experience</h2>
@@ -320,13 +312,13 @@
         Intel Technology India Pvt. Ltd. • April 2019 – June 2020
       </p>
 
-      <p class="mt-3 text-slate-600 max-w-3xl">
-        Worked on user posture detection using Time-of-Flight (ToF) sensor data and
-        AI-based approaches. Implemented Convolutional Neural Network (CNN) models
-        to classify ergonomic and non-ergonomic postures. Developed notification
-        mechanisms to alert users via visual, audio, and haptic feedback, contributing
-        to improved workplace ergonomics and user awareness.
-      </p>
+      <ul class="mt-4 list-disc list-inside space-y-2 text-slate-600 max-w-3xl">
+  <li>Worked on user posture detection using Time-of-Flight (ToF) sensor data</li>
+  <li>Built CNN-based models to classify ergonomic vs non-ergonomic postures</li>
+  <li>Integrated visual, audio, and haptic feedback mechanisms for alerts</li>
+  <li>Improved user awareness and workplace ergonomics through AI-driven insights</li>
+</ul>
+
     </div>
 
     <!-- Full-time Role -->
@@ -338,19 +330,310 @@
         Intel Technology India Pvt. Ltd. • July 2020 – Present
       </p>
 
-      <p class="mt-3 text-slate-600 max-w-3xl">
-        Involved in designing and developing automation and application solutions
-        leveraging Python-based workflows, PowerApps, Power Automate, and SharePoint
-        to streamline internal processes. Contributed to machine learning initiatives
-        for data-driven insights and implemented large language model (LLM)–based
-        solutions for intelligent automation, natural language understanding, and
-        enhanced decision support systems. Actively collaborate in Agile teams to
-        deliver scalable, maintainable, and user-centric applications.
-      </p>
+      <ul class="mt-4 list-disc list-inside space-y-2 text-slate-600 max-w-3xl">
+  <li>Designed and delivered enterprise automation solutions using Python, Power Apps, Power Automate, and SharePoint</li>
+  <li>Built internal tools to streamline workflows, reporting, and decision-making</li>
+  <li>Applied machine learning techniques for data-driven analysis and insights</li>
+  <li>Developed LLM-based solutions for intelligent automation and natural language interaction</li>
+  <li>Collaborated in Agile teams to deliver scalable, maintainable, user-centric applications</li>
+</ul>
+
     </div>
 
   </div>
 </section>
+<!-- ================= TECHNICAL SKILLS ================= -->
+<section id="skills" class="max-w-6xl mx-auto px-6 py-20">
+  <h2 class="text-2xl font-semibold text-indigo-700 mb-10">
+    Technical Skills
+  </h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <!-- 1. Programming -->
+    <div class="bg-white rounded-xl border p-6">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="code" class="text-indigo-600"></i>
+        Programming Languages
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>Python</span>
+        <span>C++</span>
+        <span>R</span>
+        <span>Java (Basics)</span>
+        <span>JavaScript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+      </div>
+    </div>
+
+    <!-- 2. Frameworks -->
+    <div class="bg-white rounded-xl border p-6">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="layers" class="text-indigo-600"></i>
+        Frameworks & Application Development
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>Svelte</span>
+        <span>FastAPI</span>
+        <span>Flask</span>
+        <span>Streamlit</span>
+        <span>Tkinter</span>
+      </div>
+    </div>
+
+    <!-- 3. AI / ML Stack -->
+    <div class="bg-white rounded-xl border p-6">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="cpu" class="text-indigo-600"></i>
+        AI, ML & LLM Stack
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>TensorFlow</span>
+        <span>Keras</span>
+        <span>Scikit-learn</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>NLTK</span>
+        <span>OpenAI</span>
+        <span>LiteLLM</span>
+        <span>LangGraph</span>
+        <span>Pydantic</span>
+      </div>
+    </div>
+
+    <!-- 4. Databases -->
+    <div class="bg-white rounded-xl border p-6">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="database" class="text-indigo-600"></i>
+        Databases & Data Stores
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>PostgreSQL</span>
+        <span>MongoDB</span>
+        <span>Cassandra</span>
+        <span>Neo4j</span>
+      </div>
+    </div>
+
+    <!-- 5. Tools -->
+    <div class="bg-white rounded-xl border p-6 md:col-span-2">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="tool" class="text-indigo-600"></i>
+        Tools, Platforms & Automation
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>Power Apps</span>
+        <span>Power Automate</span>
+        <span>SharePoint</span>
+        <span>OpenWebUI</span>
+        <span>Tableau</span>
+      </div>
+    </div>
+
+    <!-- 6. Domains -->
+    <div class="bg-white rounded-xl border p-6 md:col-span-2">
+      <h3 class="font-semibold text-lg flex items-center gap-2 mb-4">
+        <i data-feather="target" class="text-indigo-600"></i>
+        Domains & Methodologies
+      </h3>
+      <div class="flex flex-wrap gap-3 text-sm text-slate-700">
+        <span>Machine Learning</span>
+        <span>Data Analysis</span>
+        <span>Natural Language Processing</span>
+        <span>Large Language Models</span>
+        <span>AI-Driven Automation</span>
+        <span>Agile (Scrum)</span>
+        <span>DevOps</span>
+        <span>Waterfall</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="bg-white/70 border-y border-indigo-100 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Section Header -->
+    <div class="flex items-center gap-3 mb-12">
+      <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
+        <i data-feather="folder" class="text-indigo-600"></i>
+      </div>
+      <h2 class="text-2xl font-semibold text-indigo-700">
+        Projects
+      </h2>
+    </div>
+
+    <!-- ================= ACADEMIC PROJECTS ================= -->
+<h3 class="text-xl font-semibold text-slate-800 mb-6">
+  Academic Projects
+</h3>
+
+<div class="grid md:grid-cols-2 gap-8 mb-16">
+
+  <!-- Project 1: Secure Private Cloud -->
+  <div class="bg-white rounded-xl border p-6">
+    <h4 class="text-lg font-semibold text-slate-800 mb-2">
+      Implementation of a Secure Private Cloud
+    </h4>
+
+    <p class="text-sm text-indigo-600 mb-1">
+      B.E Final Year Project • May 2017
+    </p>
+
+    <p class="text-sm text-slate-600 mb-3">
+      Institute: <strong>ISTRAC, Bangalore</strong>
+    </p>
+
+    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+      <li>Designed a secure private cloud using virtual machines and OwnCloud</li>
+      <li>Enabled controlled file sharing within a private community and selective public access</li>
+      <li>Focused on access control, data security, and system scalability</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Private Cloud</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Virtualization</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Security</span>
+    </div>
+  </div>
+
+  <!-- Project 2: Enhanced CURE Algorithm -->
+  <div class="bg-white rounded-xl border p-6">
+    <h4 class="text-lg font-semibold text-slate-800 mb-2">
+      Enhanced CURE Algorithm using K-d Tree
+    </h4>
+
+    <p class="text-sm text-indigo-600 mb-1">
+      April 2019
+    </p>
+
+    <p class="text-sm text-slate-600 mb-3">
+      Institute: <strong>VIT, Vellore</strong>
+    </p>
+
+    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+      <li>Implemented the CURE clustering algorithm optimized using K-d Tree data structure</li>
+      <li>Improved clustering efficiency for massive datasets with reduced time complexity</li>
+      <li>Focused on scalability and performance optimization</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Clustering</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">CURE Algorithm</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">K-d Tree</span>
+    </div>
+  </div>
+
+  <!-- Project 3: Basketball Win Prediction -->
+  <div class="bg-white rounded-xl border p-6">
+    <h4 class="text-lg font-semibold text-slate-800 mb-2">
+      Predicting Basketball Team Winning Rate using Machine Learning
+    </h4>
+
+    <p class="text-sm text-indigo-600 mb-1">
+      April 2019
+    </p>
+
+    <p class="text-sm text-slate-600 mb-3">
+      Institute: <strong>VIT, Vellore</strong>
+    </p>
+
+    <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+      <li>Performed comparative analysis of multiple machine learning algorithms on basketball datasets</li>
+      <li>Identified the best-performing model to predict team winning rates</li>
+      <li>Visualized insights and results using Tableau dashboards</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Machine Learning</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Prediction Models</span>
+      <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Tableau</span>
+    </div>
+  </div>
+
+</div>
+
+    <!-- ================= INDUSTRY PROJECTS ================= -->
+    <h3 class="text-xl font-semibold text-slate-800 mb-6">
+      Industry & Enterprise Projects (Intel)
+    </h3>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <!-- Power Apps -->
+      <div class="bg-white rounded-xl border p-6">
+        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
+          <i data-feather="layout" class="text-indigo-600"></i>
+          Power Apps
+        </h4>
+
+        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+          <li>Internal Conference Management System (paper submission, mentor assignment, reviews, winner selection)</li>
+          <li>Issue Tracking Systems</li>
+          <li>System Technology Pipeline Tracker</li>
+          <li>Customer Adoption Tool</li>
+          <li>System Estimation Tool</li>
+          <li>Project Scheduler and Tracker</li>
+          <li>OKR Dashboard Tracker</li>
+          <li>Design Review Feedback Portal</li>
+          <li>Find the Vendor Application</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Low-code</span>
+          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Enterprise Apps</span>
+          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Process Automation</span>
+        </div>
+      </div>
+
+      <!-- Power Automate -->
+      <div class="bg-white rounded-xl border p-6">
+        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
+          <i data-feather="repeat" class="text-sky-600"></i>
+          Power Automate
+        </h4>
+
+        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+          <li>Automated generation of custom Tracking IDs for submitted papers</li>
+          <li>Automated export of PowerApps dashboards into structured Excel reports</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-2 py-1 text-xs bg-sky-100 text-sky-700 rounded">Workflow Automation</span>
+          <span class="px-2 py-1 text-xs bg-sky-100 text-sky-700 rounded">Reporting</span>
+        </div>
+      </div>
+
+      <!-- Python -->
+      <div class="bg-white rounded-xl border p-6">
+        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
+          <i data-feather="terminal" class="text-emerald-600"></i>
+          Python & AI Automation
+        </h4>
+
+        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
+          <li>Automated email communication for selected papers and demos to relevant teams</li>
+          <li>Natural language interface to query and interact with Excel files using LLMs</li>
+          <li>Board Design Review automation using Python and machine learning techniques</li>
+          <li>SEED Simulation automation using Python, Power SI, and TCL</li>
+        </ul>
+
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">Python Automation</span>
+          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">Machine Learning</span>
+          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">LLMs</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
 
 
 <!-- ================= PUBLICATIONS ================= -->
@@ -736,152 +1019,73 @@
     </div>
   </div>
 </section>
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="bg-white/70 border-y border-indigo-100 py-20">
-  <div class="max-w-6xl mx-auto px-6">
-
-    <!-- Section Header -->
-    <div class="flex items-center gap-3 mb-12">
-      <div class="w-10 h-10 rounded-lg bg-indigo-100 flex items-center justify-center">
-        <i data-feather="folder" class="text-indigo-600"></i>
-      </div>
-      <h2 class="text-2xl font-semibold text-indigo-700">
-        Projects
-      </h2>
-    </div>
-
-    <!-- ================= ACADEMIC PROJECT ================= -->
-    <h3 class="text-xl font-semibold text-slate-800 mb-6">
-      Academic Project
-    </h3>
-
-    <div class="grid md:grid-cols-2 gap-8 mb-16">
-
-      <!-- Featured Academic Project -->
-      <div class="relative bg-white rounded-xl border p-6 shadow-sm hover:shadow-md transition">
-
-        <span class="absolute top-4 right-4 text-xs px-3 py-1 rounded-full bg-indigo-100 text-indigo-700">
-          Featured
-        </span>
-
-        <h4 class="text-lg font-semibold text-slate-800 mb-2">
-          Implementation of a Secure Private Cloud
-        </h4>
-
-        <p class="text-sm text-indigo-600 mb-1">
-          Final Year Project • May 2017
-        </p>
-
-        <p class="text-sm text-slate-600 mb-4">
-          Institute: <strong>ISTRAC, Bangalore</strong>
-        </p>
-
-        <p class="text-slate-600 leading-relaxed">
-          Designed and implemented a secure private cloud infrastructure using
-          virtual machines and <strong>OwnCloud</strong>, enabling controlled file
-          sharing within a private community as well as selective public access.
-          The solution emphasized security, access control, and scalability.
-        </p>
-
-        <div class="flex flex-wrap gap-2 mt-5">
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Private Cloud</span>
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Virtualization</span>
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">OwnCloud</span>
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Security</span>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- ================= INDUSTRY PROJECTS ================= -->
-    <h3 class="text-xl font-semibold text-slate-800 mb-6">
-      Industry & Enterprise Projects (Intel)
-    </h3>
-
-    <div class="grid md:grid-cols-3 gap-8">
-
-      <!-- Power Apps -->
-      <div class="bg-white rounded-xl border p-6">
-        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
-          <i data-feather="layout" class="text-indigo-600"></i>
-          Power Apps
-        </h4>
-
-        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-          <li>Internal Conference Management System (paper submission, mentor assignment, reviews, winner selection)</li>
-          <li>Issue Tracking Systems</li>
-          <li>System Technology Pipeline Tracker</li>
-          <li>Customer Adoption Tool</li>
-          <li>System Estimation Tool</li>
-          <li>Project Scheduler and Tracker</li>
-          <li>OKR Dashboard Tracker</li>
-          <li>Design Review Feedback Portal</li>
-          <li>Find the Vendor Application</li>
-        </ul>
-
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Low-code</span>
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Enterprise Apps</span>
-          <span class="px-2 py-1 text-xs bg-indigo-100 text-indigo-700 rounded">Process Automation</span>
-        </div>
-      </div>
-
-      <!-- Power Automate -->
-      <div class="bg-white rounded-xl border p-6">
-        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
-          <i data-feather="repeat" class="text-sky-600"></i>
-          Power Automate
-        </h4>
-
-        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-          <li>Automated generation of custom Tracking IDs for submitted papers</li>
-          <li>Automated export of PowerApps dashboards into structured Excel reports</li>
-        </ul>
-
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-2 py-1 text-xs bg-sky-100 text-sky-700 rounded">Workflow Automation</span>
-          <span class="px-2 py-1 text-xs bg-sky-100 text-sky-700 rounded">Reporting</span>
-        </div>
-      </div>
-
-      <!-- Python -->
-      <div class="bg-white rounded-xl border p-6">
-        <h4 class="font-semibold text-lg text-slate-800 mb-4 flex items-center gap-2">
-          <i data-feather="terminal" class="text-emerald-600"></i>
-          Python & AI Automation
-        </h4>
-
-        <ul class="list-disc list-inside space-y-2 text-slate-600 text-sm">
-          <li>Automated email communication for selected papers and demos to relevant teams</li>
-          <li>Natural language interface to query and interact with Excel files using LLMs</li>
-          <li>Board Design Review automation using Python and machine learning techniques</li>
-          <li>SEED Simulation automation using Python, Power SI, and TCL</li>
-        </ul>
-
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">Python Automation</span>
-          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">Machine Learning</span>
-          <span class="px-2 py-1 text-xs bg-emerald-100 text-emerald-700 rounded">LLMs</span>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 
+<!-- ================= CONTACT ================= -->
 <section id="contact" class="bg-white/70 border-t border-indigo-100 py-20">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl font-semibold text-indigo-700 mb-6">Contact</h2>
 
-    <div class="text-slate-700 space-y-2">
-      <p><strong>Email:</strong> srijuvenkat@gmail.com</p>
-      <p><strong>Phone:</strong> +91 9686814830</p>
-      <p><strong>Location:</strong> Bangalore, India</p>
-    </div>
+    <h2 class="text-2xl font-semibold text-indigo-700 mb-8">
+      Get in Touch
+    </h2>
+
+    <p class="text-slate-600 max-w-xl mb-8">
+      If you’d like to connect, collaborate, or discuss opportunities, feel free
+      to drop me a message below.
+    </p>
+
+    <form
+      action="mailto:srijuvenkat@gmail.com"
+      method="POST"
+      enctype="text/plain"
+      class="max-w-xl space-y-5"
+    >
+
+      <!-- Subject -->
+      <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">
+          Subject
+        </label>
+        <input
+          type="text"
+          name="subject"
+          required
+          placeholder="Subject"
+          class="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        />
+      </div>
+
+      <!-- Message -->
+      <div>
+        <label class="block text-sm font-medium text-slate-700 mb-1">
+          Message
+        </label>
+        <textarea
+          name="body"
+          rows="5"
+          required
+          placeholder="Write your message here..."
+          class="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-400"
+        ></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button
+        type="submit"
+        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition"
+      >
+        <i data-feather="send"></i>
+        Send Email
+      </button>
+
+    </form>
+    <p class="text-xs text-slate-500">
+  This will open your default email client.
+</p>
+
   </div>
 </section>
+
 
 
 <!-- ================= FOOTER ================= -->
